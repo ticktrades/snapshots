@@ -1,4 +1,4 @@
 {
     "name": "@ticktrades/snapsots",
-    "alias": ["mcap", "crypto-shots", "coin-snapshots", "snapshots"]
+    "alias": ["crypto-shots", "coin-snapshots", "snapshots"]
 }
