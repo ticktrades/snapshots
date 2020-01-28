@@ -60,7 +60,7 @@
 		<a
 			class="contact-link link-ticktrades"
 			href="https://www.ticktrades.com">
-			Ticktrades
+			https://www.ticktrades.com
 		</a>
 	</div>
 </footer>
