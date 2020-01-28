@@ -49,34 +49,8 @@
 	let tradeData = getTradeData();
 </script>
 
-<style>
-	@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Domine:400,700|Roboto:300,400,900|Bebas+Neue|Roboto+Condensed&display=swap');
-
-	:global(body) {
-		background: black;
-		font-size: 16px;
-		color: white;
-	}
-
-	h1 {
-		font-family: 'Abril Fatface', cursive;
-		font-family: "Domine", serif;
-		font-size: 3rem;
-		text-align: center;
-		color: rgb(237, 37, 77);
-	}
-	h2 {
-		font-family: "Roboto";
-		font-family: 'Bebas Neue', cursive;
-		text-transform: uppercase;
-    font-weight: 900;
-		text-align: center;
-		color: rgba(255, 255, 255, 0.8);
-	}
-</style>
-
 <h1>Crypto Market Cap</h1>
-<h2>Week {getCurrentWeekNumber()}</h2>
+<!-- <h2>Week {getCurrentWeekNumber()}</h2> -->
 
 <section class="report">
 	{#await tradeData}

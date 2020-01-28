@@ -42,34 +42,49 @@
 		text-align: center;
 	}
 	.report-summary {
-		display: grid;
+		/* display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-gap: 10px;
+		grid-gap: 10px; */
+		
+		width: 100%;
+		max-width: 500px;
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		margin: -50px auto 0;
+    	position: relative;
+	}
+	.report-summary-btc{
+		padding-left: 20px;
+	}
+	.report-summary-alt{
+		padding-right: 20px;
 	}
 	meter {
 		display: block;
-		width: 500px;
+		width: 100%;
+		max-width: 500px;
 		height: 50px;
 		/*-webkit-appearance: none;  Reset appearance */
 		border: 1px solid #26a69a;
 		border-radius: 25px;
-		margin: 5em auto;
+		margin: 5em auto 1em;
 		position: relative;
 	}
 	meter::-webkit-meter-bar {
 		background: none; /* Required to get rid of the default background property */
-		background-color: #262b3e/*#03a9f4*/;
+		background-color: #03a9f4/*#262b3e*/;
 		/*box-shadow: 0 5px 5px -5px #333 inset;*/
 		border: 0px solid /*#f05250*/;
 	}
 	meter::-webkit-meter-suboptimum-value {
 		background: none; /* Required to get rid of the default background property */
-		background-color: gold;
+		background-color: orange;
 		/*box-shadow: 0 5px 5px -5px #333 inset;*/
 	}
 	meter::-webkit-meter-optimum-value {
 		background: none; /* Required to get rid of the default background property */
-		background-color: gold;
+		background-color: orange;
 	}
 	meter::before {
 		content: 'BTC ' attr(value) '%';
@@ -78,7 +93,7 @@
 	}
 
 	meter::after {
-		content: 'Alts Coins ' attr(data-alt) '%';
+		content: 'Alt Coins ' attr(data-alt) '%';
 		position: absolute;
 		top: -80%;
 		right: 0;
@@ -100,11 +115,11 @@
 	data-alt={market_cap_percentage_rest_label} 
 			 />
 <div class="report-summary">
-	<div>
+	<div class="report-summary-btc">
 		<div>USD {market_cap_btc_intl}</div>
 		<!--<div>Up 2.3 billion (1.8 %)</div> -->
 	</div>
-	<div>
+	<div class="report-summary-alt">
 		<div>USD {market_cap_alt_intl}</div>
 		<!--<div>Down 0.1 billion W-o-W (0.15%)</div> -->
 	</div>
