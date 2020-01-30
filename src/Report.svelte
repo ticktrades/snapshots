@@ -21,6 +21,8 @@
 	}
 	$: sum_total_market_cap_intl = getIntlNum(market_cap_usd);
 
+	$: market_cap_btc = market_cap_usd * market_cap_percentage_btc / 100;
+
 	$: market_cap_btc_intl = getIntlNum((market_cap_usd * market_cap_percentage_btc / 100));
 
 	$: market_cap_alt_intl = getIntlNum(
@@ -39,7 +41,9 @@
 
 <style>
 	h3{
+		margin-top: 4px;
 		text-align: center;
+		font-family: 'Roboto Condensed', sans-serif;
 	}
 	.report-summary {
 		/* display: grid;
@@ -79,12 +83,15 @@
 	}
 	meter::-webkit-meter-suboptimum-value {
 		background: none; /* Required to get rid of the default background property */
-		background-color: orange;
+		background-color: green;
 		/*box-shadow: 0 5px 5px -5px #333 inset;*/
 	}
 	meter::-webkit-meter-optimum-value {
 		background: none; /* Required to get rid of the default background property */
+		background-color: green;
 		background-color: orange;
+		background-color: yellowgreen;
+
 	}
 	meter::before {
 		content: 'BTC ' attr(value) '%';
@@ -93,7 +100,7 @@
 	}
 
 	meter::after {
-		content: 'Alt Coins ' attr(data-alt) '%';
+		content: 'Alts ' attr(data-alt) '%';
 		position: absolute;
 		top: -80%;
 		right: 0;

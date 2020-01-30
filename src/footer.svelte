@@ -10,7 +10,7 @@
 	footer {
 		margin: 50px auto 20px;
 		width: 100%;
-		max-width: 650px;
+		max-width: 500px;
 	}
 
 	.social-media{
@@ -22,7 +22,7 @@
 		line-height: 2rem;
 		background-size: contain;
 		padding-left: 2.5rem;
-		margin: 20px;
+		margin: 10px;
 		font-size: 0.8rem;
 	}
 	.contact-twitter {
