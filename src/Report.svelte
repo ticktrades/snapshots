@@ -43,7 +43,8 @@
 	h3{
 		margin-top: 4px;
 		text-align: center;
-		font-family: 'Roboto Condensed', sans-serif;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 100;
 	}
 	.report-summary {
 		/* display: grid;
@@ -84,12 +85,11 @@
 	meter::-webkit-meter-suboptimum-value {
 		background: none; /* Required to get rid of the default background property */
 		background-color: green;
+		border-radius: 5px;
 		/*box-shadow: 0 5px 5px -5px #333 inset;*/
 	}
 	meter::-webkit-meter-optimum-value {
 		background: none; /* Required to get rid of the default background property */
-		background-color: green;
-		background-color: orange;
 		background-color: yellowgreen;
 
 	}
@@ -112,7 +112,7 @@
 	}
 </style>
 
-<h3>Total crypto market cap: USD {sum_total_market_cap_intl}</h3>
+<h3><i>Total crypto market cap:</i> USD {sum_total_market_cap_intl}</h3>
 
 <meter
 	id="marketcap"
