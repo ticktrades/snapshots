@@ -36,6 +36,7 @@
 				Number.parseFloat(previous, 10) + Number.parseFloat(current, 10),
 			0
 		);
+		console.log(sum_total_market_cap);
 
 		return {
 			market_cap_percentage,
@@ -49,7 +50,7 @@
 	let tradeData = getTradeData();
 </script>
 
-<h1>Crypto Market Cap</h1>
+<h1>Crypto Market Data</h1>
 <!-- <h2>Week {getCurrentWeekNumber()}</h2> -->
 
 <section class="report">
