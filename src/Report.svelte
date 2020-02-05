@@ -1,6 +1,5 @@
 <script>
 	export let market_cap_percentage_btc = 0;
-	export let sum_total_market_cap = 0;
 	export let market_cap_btc = 0;
 	export let market_cap_usd = 0;
 	/**
