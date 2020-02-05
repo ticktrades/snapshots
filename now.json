@@ -1,10 +1,4 @@
 {
     "name": "@ticktrades/snapsots",
-    "alias": ["crypto-shots", "coin-snapshots", "snapshots"],
-    "functions": {
-        "api/**/*.ts": {
-            "runtime": "now-deno@0.3.0",
-            "memory": 128
-        }
-    }
+    "alias": ["crypto-shots", "coin-snapshots", "snapshots"]
 }
